@@ -64,43 +64,26 @@
         display: table;
         width: 100%;
       }
-      .navbar .nav li {
+      .navbar .nav > li {
         display: table-cell;
         width: 1%;
         float: none;
       }
-      .navbar .nav li a {
+      .navbar .nav > li > a {
         font-weight: bold;
         text-align: center;
         border-left: 1px solid rgba(255,255,255,.75);
         border-right: 1px solid rgba(0,0,0,.1);
       }
-      .navbar .nav li:first-child a {
+      .navbar .nav > li:first-child > a {
         border-left: 0;
         border-radius: 3px 0 0 3px;
       }
-      .navbar .nav li:last-child a {
+      .navbar .nav > li:last-child > a {
         border-right: 0;
         border-radius: 0 3px 3px 0;
       }
 
-      /* Make sure formatting of .nav in dropdown menu is default */
-      .navbar ul.nav {
-      display: table;
-      table-layout: fixed;
-      width: 100%;
-      }
-      .navbar ul.nav > li {
-      display: table-cell;
-      float: none;
-      text-align: center;
-      }
-      .dropdown-menu{
-      left:auto;
-      }
-      .navbar ul.dropdown-menu li {
-      text-align: left;
-      }
 
 
     /* RESPONSIVE CSS
