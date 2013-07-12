@@ -85,8 +85,21 @@
       }
 
       /* Make sure formatting of .nav in dropdown menu is default */
+      .navbar ul.nav {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      }
+      .navbar ul.nav > li {
+      display: table-cell;
+      float: none;
+      text-align: center;
+      }
       .dropdown-menu{
       left:auto;
+      }
+      .navbar ul.dropdown-menu li {
+      text-align: left;
       }
 
 
