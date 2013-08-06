@@ -1,3 +1,27 @@
+<?php
+
+/***********************************************************************
+* login.php
+*
+* Renata Cummins
+* Final Project
+*
+* Has a box that allows previous users to log in to access the site, 
+* and also has a box that allows new users to link to the registration 
+* page. Also explains a little about the purpose of the website. 
+**********************************************************************/
+
+    // require common code
+    require_once("includes/common.php");
+        
+    // log current user out, if any
+    $_SESSION = array();
+    if (isset($_COOKIE[session_name()]))
+    setcookie(session_name(), "", time() - 42000, "/");
+    session_destroy();
+                                
+?>
+
 <!DOCTYPE html
     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
